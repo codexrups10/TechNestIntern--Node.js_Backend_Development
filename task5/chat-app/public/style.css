@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ece5dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.chat-container {
+  width: 400px;
+  height: 600px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.chat-title {
+  text-align: center;
+  background: #075e54;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
+.join-section {
+  padding: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.join-section input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.join-section button {
+  padding: 8px 14px;
+  background: #075e54;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.join-section button:hover {
+  background: #128c7e;
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  background: #ece5dd;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+
+.my-message {
+  align-self: flex-end;
+  background: #25d366;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.other-message {
+  align-self: flex-start;
+  background: #ffffff;
+  color: black;
+  border-bottom-left-radius: 0;
+}
+
+.msg-header {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.msg-text {
+  font-size: 14px;
+}
+
+.msg-time {
+  font-size: 10px;
+  color: #555;
+  text-align: right;
+  margin-top: 3px;
+}
+
+.input-section {
+  display: flex;
+  padding: 10px;
+  background: #f0f0f0;
+  gap: 6px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.input-section button {
+  padding: 8px 12px;
+  background: #075e54;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background: #128c7e;
+}
+.join-section {
+  padding: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.join-section input {
+  flex: 1; /* share space equally */
+  min-width: 0; /* prevent overflowing */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.join-section button {
+  flex-shrink: 0;       /* don’t let button shrink */
+  width: 70px;          /* fixed width */
+  padding: 8px;
+  background: #075e54;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.join-section button:hover {
+  background: #128c7e;
+}

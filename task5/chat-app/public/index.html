@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Debdex Chat App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div class="chat-container">
+      <h1 class="chat-title">Rupex Chat App</h1>
+
+      <!-- Room + Name Input -->
+      <div class="join-section">
+        <input id="room" placeholder="Enter room" />
+        <input id="user" placeholder="Enter your name" />
+        <button onclick="joinRoom()">Join</button>
+      </div>
+
+      <!-- Chat Messages -->
+      <div id="messages" class="messages"></div>
+
+      <!-- Message Input -->
+      <div class="input-section">
+        <input id="msgInput" placeholder="Type message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script>
+      const socket = io();
+      let currentUser = "";
+      let currentRoom = "";
+
+      function joinRoom() {
+        currentRoom = document.getElementById("room").value.trim();
+        currentUser = document.getElementById("user").value.trim();
+
+        if (!currentRoom || !currentUser) {
+          alert("Please enter both room and name");
+          return;
+        }
+
+        socket.emit("joinRoom", currentRoom);
+
+        socket.on("history", (history) => {
+          document.getElementById("messages").innerHTML = "";
+          history.forEach((msg) => addMessage(msg));
+        });
+
+        socket.on("message", (msg) => {
+          addMessage(msg);
+        });
+      }
+
+      function sendMessage() {
+        const text = document.getElementById("msgInput").value.trim();
+        if (!text) return;
+
+        socket.emit("message", {
+          room: currentRoom,
+          user: currentUser,
+          text,
+        });
+
+        document.getElementById("msgInput").value = "";
+      }
+
+      function addMessage(msg) {
+        const div = document.createElement("div");
+        const isMine = msg.user === currentUser;
+
+        div.classList.add("message", isMine ? "my-message" : "other-message");
+
+        const sender = isMine ? "You" : msg.user;
+        const time = new Date(msg.timestamp).toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+
+        div.innerHTML = `
+          <div class="msg-header">${sender}</div>
+          <div class="msg-text">${msg.text}</div>
+          <div class="msg-time">${time}</div>
+        `;
+
+        document.getElementById("messages").appendChild(div);
+
+        // Auto scroll
+        div.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
