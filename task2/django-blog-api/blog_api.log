@@ -1,0 +1,708 @@
+INFO 2025-09-18 18:41:16,804 autoreload 17320 7380 Watching for file changes with StatReloader
+INFO 2025-09-18 18:41:21,318 logging_middleware 17320 4412 REQUEST: {
+  "method": "GET",
+  "path": "/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-18 18:41:21"
+}
+ERROR 2025-09-18 18:41:21,424 logging_middleware 17320 4412 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/",
+  "status_code": 404,
+  "duration_ms": 106.96,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 18:41:21",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-18 18:41:21,424 log 17320 4412 Not Found: /
+WARNING 2025-09-18 18:41:21,424 basehttp 17320 4412 "GET / HTTP/1.1" 404 2276
+INFO 2025-09-18 18:41:21,475 logging_middleware 17320 4412 REQUEST: {
+  "method": "GET",
+  "path": "/favicon.ico",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-18 18:41:21"
+}
+ERROR 2025-09-18 18:41:21,482 logging_middleware 17320 4412 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/favicon.ico",
+  "status_code": 404,
+  "duration_ms": 7.12,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 18:41:21",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-18 18:41:21,482 log 17320 4412 Not Found: /favicon.ico
+WARNING 2025-09-18 18:41:21,482 basehttp 17320 4412 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2025-09-18 18:43:57,444 logging_middleware 17320 17072 REQUEST: {
+  "method": "GET",
+  "path": "/admin/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0",
+  "timestamp": "2025-09-18 18:43:57"
+}
+INFO 2025-09-18 18:43:57,460 logging_middleware 17320 17072 RESPONSE: {
+  "method": "GET",
+  "path": "/admin/",
+  "status_code": 302,
+  "duration_ms": 16.33,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 18:43:57"
+}
+INFO 2025-09-18 18:43:57,461 basehttp 17320 17072 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-18 18:43:57,465 logging_middleware 17320 17072 REQUEST: {
+  "method": "GET",
+  "path": "/admin/login/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0",
+  "timestamp": "2025-09-18 18:43:57"
+}
+INFO 2025-09-18 18:43:57,610 logging_middleware 17320 17072 RESPONSE: {
+  "method": "GET",
+  "path": "/admin/login/",
+  "status_code": 200,
+  "duration_ms": 144.11,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 18:43:57"
+}
+INFO 2025-09-18 18:43:57,611 basehttp 17320 17072 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
+INFO 2025-09-18 18:43:57,738 basehttp 17320 17072 "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+INFO 2025-09-18 18:43:57,738 basehttp 17320 12760 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2025-09-18 18:43:57,741 basehttp 17320 16192 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-09-18 18:43:57,742 basehttp 17320 7036 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2025-09-18 18:43:57,743 basehttp 17320 4284 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+INFO 2025-09-18 18:43:57,875 basehttp 17320 7036 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-09-18 18:43:57,875 basehttp 17320 4284 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-09-18 18:43:58,320 logging_middleware 17320 4284 REQUEST: {
+  "method": "GET",
+  "path": "/favicon.ico",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0",
+  "timestamp": "2025-09-18 18:43:58"
+}
+ERROR 2025-09-18 18:43:58,325 logging_middleware 17320 4284 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/favicon.ico",
+  "status_code": 404,
+  "duration_ms": 5.51,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 18:43:58",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-18 18:43:58,326 log 17320 4284 Not Found: /favicon.ico
+WARNING 2025-09-18 18:43:58,326 basehttp 17320 4284 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2025-09-18 18:46:32,823 logging_middleware 17320 4284 REQUEST: {
+  "method": "POST",
+  "path": "/admin/login/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0",
+  "timestamp": "2025-09-18 18:46:32",
+  "request_body": "Unable to parse request body"
+}
+ERROR 2025-09-18 18:46:32,826 logging_middleware 17320 4284 EXCEPTION: {
+  "method": "POST",
+  "path": "/admin/login/",
+  "user": "Anonymous",
+  "exception_type": "OperationalError",
+  "exception_message": "no such table: blog_users",
+  "timestamp": "2025-09-18 18:46:32"
+}
+Traceback (most recent call last):
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: blog_users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\forms.py", line 250, in clean
+    self.user_cache = authenticate(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: blog_users
+ERROR 2025-09-18 18:46:32,910 log 17320 4284 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: blog_users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\forms.py", line 250, in clean
+    self.user_cache = authenticate(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: blog_users
+ERROR 2025-09-18 18:46:32,913 logging_middleware 17320 4284 RESPONSE ERROR: {
+  "method": "POST",
+  "path": "/admin/login/",
+  "status_code": 500,
+  "duration_ms": 89.91,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 18:46:32",
+  "response_body": "Unable to parse response body"
+}
+ERROR 2025-09-18 18:46:32,914 basehttp 17320 4284 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 245039
+INFO 2025-09-18 19:40:17,887 autoreload 9720 6516 Watching for file changes with StatReloader
+INFO 2025-09-18 19:40:21,617 logging_middleware 9720 1268 REQUEST: {
+  "method": "GET",
+  "path": "/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-18 19:40:21"
+}
+ERROR 2025-09-18 19:40:21,636 logging_middleware 9720 1268 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/",
+  "status_code": 404,
+  "duration_ms": 18.03,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 19:40:21",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-18 19:40:21,636 log 9720 1268 Not Found: /
+WARNING 2025-09-18 19:40:21,637 basehttp 9720 1268 "GET / HTTP/1.1" 404 2276
+INFO 2025-09-18 19:40:35,708 logging_middleware 9720 1268 REQUEST: {
+  "method": "GET",
+  "path": "/hello",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-18 19:40:35"
+}
+ERROR 2025-09-18 19:40:35,713 logging_middleware 9720 1268 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/hello",
+  "status_code": 404,
+  "duration_ms": 5.0,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 19:40:35",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-18 19:40:35,714 log 9720 1268 Not Found: /hello
+WARNING 2025-09-18 19:40:35,714 basehttp 9720 1268 "GET /hello HTTP/1.1" 404 2309
+INFO 2025-09-18 19:40:44,187 logging_middleware 9720 1268 REQUEST: {
+  "method": "GET",
+  "path": "/hello",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-18 19:40:44"
+}
+ERROR 2025-09-18 19:40:44,192 logging_middleware 9720 1268 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/hello",
+  "status_code": 404,
+  "duration_ms": 4.5,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 19:40:44",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-18 19:40:44,193 log 9720 1268 Not Found: /hello
+WARNING 2025-09-18 19:40:44,193 basehttp 9720 1268 "GET /hello HTTP/1.1" 404 2309
+INFO 2025-09-18 19:41:43,445 logging_middleware 9720 1268 REQUEST: {
+  "method": "GET",
+  "path": "/admin/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-18 19:41:43"
+}
+INFO 2025-09-18 19:41:43,462 logging_middleware 9720 1268 RESPONSE: {
+  "method": "GET",
+  "path": "/admin/",
+  "status_code": 302,
+  "duration_ms": 17.47,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 19:41:43"
+}
+INFO 2025-09-18 19:41:43,463 basehttp 9720 1268 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-18 19:41:43,467 logging_middleware 9720 1268 REQUEST: {
+  "method": "GET",
+  "path": "/admin/login/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-18 19:41:43"
+}
+INFO 2025-09-18 19:41:43,496 logging_middleware 9720 1268 RESPONSE: {
+  "method": "GET",
+  "path": "/admin/login/",
+  "status_code": 200,
+  "duration_ms": 28.57,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 19:41:43"
+}
+INFO 2025-09-18 19:41:43,498 basehttp 9720 1268 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4178
+INFO 2025-09-18 19:41:43,564 basehttp 9720 1268 "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+INFO 2025-09-18 19:41:43,566 basehttp 9720 1268 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-09-18 19:41:43,598 basehttp 9720 8892 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2025-09-18 19:41:43,605 basehttp 9720 14792 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2025-09-18 19:41:43,612 basehttp 9720 16940 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+INFO 2025-09-18 19:41:43,614 basehttp 9720 16868 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-09-18 19:41:43,614 basehttp 9720 15008 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-09-18 19:47:01,206 logging_middleware 9720 4988 REQUEST: {
+  "method": "POST",
+  "path": "/admin/login/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-18 19:47:01",
+  "request_body": "Unable to parse request body"
+}
+ERROR 2025-09-18 19:47:01,210 logging_middleware 9720 4988 EXCEPTION: {
+  "method": "POST",
+  "path": "/admin/login/",
+  "user": "Anonymous",
+  "exception_type": "OperationalError",
+  "exception_message": "no such table: blog_users",
+  "timestamp": "2025-09-18 19:47:01"
+}
+Traceback (most recent call last):
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: blog_users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\forms.py", line 250, in clean
+    self.user_cache = authenticate(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: blog_users
+ERROR 2025-09-18 19:47:01,254 log 9720 4988 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: blog_users
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\generic\edit.py", line 152, in post
+    if form.is_valid():
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 201, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 196, in errors
+    self.full_clean()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 434, in full_clean
+    self._clean_form()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\forms\forms.py", line 455, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\forms.py", line 250, in clean
+    self.user_cache = authenticate(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\backends.py", line 46, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\contrib\auth\base_user.py", line 54, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\230625\Desktop\technest\task2\django-blog-api\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: blog_users
+ERROR 2025-09-18 19:47:01,256 logging_middleware 9720 4988 RESPONSE ERROR: {
+  "method": "POST",
+  "path": "/admin/login/",
+  "status_code": 500,
+  "duration_ms": 50.25,
+  "user": "Anonymous",
+  "timestamp": "2025-09-18 19:47:01",
+  "response_body": "Unable to parse response body"
+}
+ERROR 2025-09-18 19:47:01,257 basehttp 9720 4988 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 244056
+INFO 2025-09-19 01:38:04,679 autoreload 12640 12884 Watching for file changes with StatReloader
+INFO 2025-09-19 01:56:46,427 autoreload 3708 10256 Watching for file changes with StatReloader
+INFO 2025-09-19 01:57:58,639 autoreload 2612 5136 Watching for file changes with StatReloader
+INFO 2025-09-19 01:58:02,125 logging_middleware 2612 13684 REQUEST: {
+  "method": "GET",
+  "path": "/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-19 01:58:02"
+}
+ERROR 2025-09-19 01:58:02,197 logging_middleware 2612 13684 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/",
+  "status_code": 404,
+  "duration_ms": 71.69,
+  "user": "Anonymous",
+  "timestamp": "2025-09-19 01:58:02",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-19 01:58:02,198 log 2612 13684 Not Found: /
+WARNING 2025-09-19 01:58:02,198 basehttp 2612 13684 "GET / HTTP/1.1" 404 2276
+INFO 2025-09-19 01:58:02,234 logging_middleware 2612 13684 REQUEST: {
+  "method": "GET",
+  "path": "/favicon.ico",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-19 01:58:02"
+}
+ERROR 2025-09-19 01:58:02,240 logging_middleware 2612 13684 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/favicon.ico",
+  "status_code": 404,
+  "duration_ms": 6.06,
+  "user": "Anonymous",
+  "timestamp": "2025-09-19 01:58:02",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-19 01:58:02,240 log 2612 13684 Not Found: /favicon.ico
+WARNING 2025-09-19 01:58:02,241 basehttp 2612 13684 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2025-09-19 01:58:17,379 logging_middleware 2612 3280 REQUEST: {
+  "method": "GET",
+  "path": "/hello/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0",
+  "timestamp": "2025-09-19 01:58:17"
+}
+ERROR 2025-09-19 01:58:17,384 logging_middleware 2612 3280 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/hello/",
+  "status_code": 404,
+  "duration_ms": 4.51,
+  "user": "Anonymous",
+  "timestamp": "2025-09-19 01:58:17",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-19 01:58:17,384 log 2612 3280 Not Found: /hello/
+WARNING 2025-09-19 01:58:17,385 basehttp 2612 3280 "GET /hello/ HTTP/1.1" 404 2312
+INFO 2025-09-19 02:09:32,572 autoreload 13128 5196 Watching for file changes with StatReloader
+INFO 2025-09-19 02:11:56,169 autoreload 3020 3616 Watching for file changes with StatReloader
+INFO 2025-09-19 02:11:58,606 logging_middleware 3020 12480 REQUEST: {
+  "method": "GET",
+  "path": "/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-19 02:11:58"
+}
+ERROR 2025-09-19 02:11:58,627 logging_middleware 3020 12480 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/",
+  "status_code": 404,
+  "duration_ms": 21.67,
+  "user": "Anonymous",
+  "timestamp": "2025-09-19 02:11:58",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-19 02:11:58,628 log 3020 12480 Not Found: /
+WARNING 2025-09-19 02:11:58,628 basehttp 3020 12480 "GET / HTTP/1.1" 404 2276
+INFO 2025-09-19 02:14:00,661 autoreload 12468 13708 Watching for file changes with StatReloader
+INFO 2025-09-19 02:14:02,483 logging_middleware 12468 144 REQUEST: {
+  "method": "GET",
+  "path": "/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-19 02:14:02"
+}
+ERROR 2025-09-19 02:14:02,504 logging_middleware 12468 144 RESPONSE ERROR: {
+  "method": "GET",
+  "path": "/",
+  "status_code": 404,
+  "duration_ms": 20.05,
+  "user": "Anonymous",
+  "timestamp": "2025-09-19 02:14:02",
+  "response_body": "Unable to parse response body"
+}
+WARNING 2025-09-19 02:14:02,504 log 12468 144 Not Found: /
+WARNING 2025-09-19 02:14:02,505 basehttp 12468 144 "GET / HTTP/1.1" 404 2382
+INFO 2025-09-19 02:14:42,146 logging_middleware 12468 144 REQUEST: {
+  "method": "GET",
+  "path": "/api/v1/hello/",
+  "user": "Anonymous",
+  "ip_address": "127.0.0.1",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timestamp": "2025-09-19 02:14:42"
+}
+INFO 2025-09-19 02:14:42,146 logging_middleware 12468 144 RESPONSE: {
+  "method": "GET",
+  "path": "/api/v1/hello/",
+  "status_code": 200,
+  "duration_ms": 1.0,
+  "user": "Anonymous",
+  "timestamp": "2025-09-19 02:14:42"
+}
+INFO 2025-09-19 02:14:42,147 basehttp 12468 144 "GET /api/v1/hello/ HTTP/1.1" 200 26

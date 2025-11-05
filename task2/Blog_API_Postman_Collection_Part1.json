@@ -1,0 +1,349 @@
+{
+  "info": {
+    "name": "Django Blog API - Week 2 CRUD Routing",
+    "description": "Complete API collection for Django REST Framework blog application with full CRUD operations, authentication, and filtering capabilities.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{access_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "refresh_token",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Register User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"testuser\",\n  \"email\": \"testuser@example.com\",\n  \"password\": \"testpassword123\",\n  \"password_confirm\": \"testpassword123\",\n  \"first_name\": \"Test\",\n  \"last_name\": \"User\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/users/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Login (Get Token)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const responseJson = pm.response.json();",
+                  "if (responseJson.access) {",
+                  "    pm.collectionVariables.set('access_token', responseJson.access);",
+                  "}",
+                  "if (responseJson.refresh) {",
+                  "    pm.collectionVariables.set('refresh_token', responseJson.refresh);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"testuser@example.com\",\n  \"password\": \"testpassword123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/login/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "login",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Refresh Token",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refresh\": \"{{refresh_token}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/refresh/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "auth",
+                "refresh",
+                ""
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "List Users",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/v1/users/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Current User",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/v1/users/me/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "me",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Update Profile",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bio\": \"Updated bio\",\n  \"location\": \"New York\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/users/update_profile/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "update_profile",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get User by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/v1/users/1/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "1",
+                ""
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "List Categories",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/v1/categories/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Category",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Technology\",\n  \"slug\": \"technology\",\n  \"description\": \"Posts about technology and programming\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/categories/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Category by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/v1/categories/1/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                "1",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Update Category",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Technology & Programming\",\n  \"slug\": \"technology-programming\",\n  \"description\": \"Updated description for technology posts\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/v1/categories/1/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                "1",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Delete Category",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/api/v1/categories/1/",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "categories",
+                "1",
+                ""
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
